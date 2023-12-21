@@ -1,0 +1,110 @@
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAll/"},"timestamp":"2023-12-12 20:06:56"}
+{"controller":"table/getAll","level":"info","message":"OK","timestamp":"2023-12-12 20:06:57"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/insert"},"timestamp":"2023-12-12 20:36:16"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/insert"},"timestamp":"2023-12-12 20:37:13"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/insert"},"timestamp":"2023-12-12 20:37:22"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/insert"},"timestamp":"2023-12-12 20:37:47"}
+{"level":"error","message":{"controller":"table/insert","error":"syntax error at or near \"WHERE\""},"timestamp":"2023-12-12 20:37:48"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/insert"},"timestamp":"2023-12-12 20:41:28"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:41:52"}
+{"level":"error","message":{"controller":"table/insert","error":"syntax error at or near \"WHERE\""},"timestamp":"2023-12-12 20:41:53"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:43:44"}
+{"level":"error","message":{"controller":"table/insert","error":"invalid input syntax for type uuid: \"{\"id\":\"f8661dd0-0a46-436f-89d6-24c408f931a2\",\"description\":\"update\"}\""},"timestamp":"2023-12-12 20:43:45"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:44:40"}
+{"level":"error","message":{"controller":"table/insert","error":"invalid input syntax for type uuid: \"{\"id\":\"f8661dd0-0a46-436f-89d6-24c408f931a2\",\"description\":\"update\"}\""},"timestamp":"2023-12-12 20:44:40"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:46:04"}
+{"level":"error","message":{"controller":"table/insert","error":"invalid input syntax for type uuid: \"{\"id\":\"f8661dd0-0a46-436f-89d6-24c408f931a2\",\"description\":\"update\"}\""},"timestamp":"2023-12-12 20:46:05"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:46:43"}
+{"level":"error","message":{"controller":"table/insert","error":"invalid input syntax for type uuid: \"{\"id\":\"f8661dd0-0a46-436f-89d6-24c408f931a2\",\"description\":\"update\"}\""},"timestamp":"2023-12-12 20:46:44"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:46:46"}
+{"level":"error","message":{"controller":"table/insert","error":"invalid input syntax for type uuid: \"{\"id\":\"f8661dd0-0a46-436f-89d6-24c408f931a2\",\"description\":\"update\"}\""},"timestamp":"2023-12-12 20:46:47"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:46:49"}
+{"level":"error","message":{"controller":"table/insert","error":"invalid input syntax for type uuid: \"{\"id\":\"f8661dd0-0a46-436f-89d6-24c408f931a2\",\"description\":\"update\"}\""},"timestamp":"2023-12-12 20:46:49"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:46:50"}
+{"level":"error","message":{"controller":"table/insert","error":"invalid input syntax for type uuid: \"{\"id\":\"f8661dd0-0a46-436f-89d6-24c408f931a2\",\"description\":\"update\"}\""},"timestamp":"2023-12-12 20:46:51"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:53:10"}
+{"controller":"table/update","level":"info","message":"OK","timestamp":"2023-12-12 20:53:11"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931a2ss"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:56:57"}
+{"level":"error","message":{"error":"invalid input syntax for type uuid: \"f8661dd0-0a46-436f-89d6-24c408f931a2ss\"","model":"table/update"},"timestamp":"2023-12-12 20:56:57"}
+{"level":"info","message":{"body":{"description":"update","id":"f8661dd0-0a46-436f-89d6-24c408f931"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:58:46"}
+{"level":"error","message":{"error":"invalid input syntax for type uuid: \"f8661dd0-0a46-436f-89d6-24c408f931\"","model":"table/update"},"timestamp":"2023-12-12 20:58:47"}
+{"level":"info","message":{"body":{"description":"edit","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 20:58:58"}
+{"controller":"table/update","level":"info","message":"OK","timestamp":"2023-12-12 20:58:58"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTable/"},"timestamp":"2023-12-12 21:07:40"}
+{"controller":"table/getAll","level":"info","message":"OK","timestamp":"2023-12-12 21:07:41"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTable/"},"timestamp":"2023-12-12 21:28:51"}
+{"controller":"table/getAllTable","level":"info","message":"OK","timestamp":"2023-12-12 21:28:51"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTable/"},"timestamp":"2023-12-12 21:28:53"}
+{"controller":"table/getAllTable","level":"info","message":"OK","timestamp":"2023-12-12 21:28:53"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 21:29:09"}
+{"level":"error","message":{"error":"DEFAULT is not allowed in this context","model":"tableField/getAll"},"timestamp":"2023-12-12 21:29:10"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 21:31:13"}
+{"level":"error","message":{"error":"DEFAULT is not allowed in this context","model":"tableField/getAll"},"timestamp":"2023-12-12 21:31:13"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 21:31:15"}
+{"level":"error","message":{"error":"DEFAULT is not allowed in this context","model":"tableField/getAll"},"timestamp":"2023-12-12 21:31:16"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 21:31:37"}
+{"controller":"table/getAllTableField","level":"info","message":"OK","timestamp":"2023-12-12 21:31:38"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 21:32:44"}
+{"controller":"table/getAllTableField","level":"info","message":"OK","timestamp":"2023-12-12 21:32:45"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 21:32:56"}
+{"level":"error","message":{"error":"DEFAULT is not allowed in this context","model":"tableField/getAll"},"timestamp":"2023-12-12 21:32:57"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 21:34:30"}
+{"controller":"table/getAllTableField","level":"info","message":"OK","timestamp":"2023-12-12 21:34:30"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:39:45"}
+{"level":"error","message":{"error":"syntax error at or near \"constraint\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:39:46"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:40:31"}
+{"level":"error","message":{"error":"syntax error at or near \"table\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:40:32"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:40:33"}
+{"level":"error","message":{"error":"syntax error at or near \"table\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:40:34"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:41:39"}
+{"level":"error","message":{"error":"syntax error at or near \"table\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:41:39"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:41:41"}
+{"level":"error","message":{"error":"syntax error at or near \"table\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:41:42"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:42:00"}
+{"controller":"table/getAllTableIndex","level":"info","message":"OK","timestamp":"2023-12-12 21:42:00"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:45:07"}
+{"level":"error","message":{"error":"syntax error at or near \"constraint\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:45:07"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:45:09"}
+{"level":"error","message":{"error":"syntax error at or near \"constraint\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:45:10"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:45:13"}
+{"level":"error","message":{"error":"syntax error at or near \"constraint\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:45:15"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:46:48"}
+{"level":"error","message":{"error":"syntax error at or near \"constraint\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:46:49"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:48:19"}
+{"level":"error","message":{"error":"syntax error at or near \"constraint\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:48:19"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:48:21"}
+{"level":"error","message":{"error":"syntax error at or near \"constraint\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:48:22"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:48:36"}
+{"level":"error","message":{"error":"syntax error at or near \"table\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:48:37"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:49:02"}
+{"level":"error","message":{"error":"syntax error at or near \"column\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:49:03"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:49:11"}
+{"level":"error","message":{"error":"syntax error at or near \"FROM\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:49:11"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:49:55"}
+{"level":"error","message":{"error":"syntax error at or near \"constraint\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:49:55"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:51:49"}
+{"level":"error","message":{"error":"syntax error at or near \"constraint\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:51:50"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:52:09"}
+{"level":"error","message":{"error":"syntax error at or near \"FROM\"","model":"tableIndex/getAll"},"timestamp":"2023-12-12 21:52:09"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:53:40"}
+{"controller":"table/getAllTableIndex","level":"info","message":"OK","timestamp":"2023-12-12 21:53:41"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTable/"},"timestamp":"2023-12-12 21:58:02"}
+{"controller":"table/getAllTable","level":"info","message":"OK","timestamp":"2023-12-12 21:58:02"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 21:58:23"}
+{"controller":"table/getAllTableField","level":"info","message":"OK","timestamp":"2023-12-12 21:58:24"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:58:36"}
+{"controller":"table/getAllTableIndex","level":"info","message":"OK","timestamp":"2023-12-12 21:58:36"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 21:58:41"}
+{"controller":"table/getAllTableIndex","level":"info","message":"OK","timestamp":"2023-12-12 21:58:41"}
+{"level":"info","message":{"body":{"description":"informacion sobre despacho","id":"f8661dd0-0a46-436f-89d6-24c408f931a2"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 21:59:26"}
+{"controller":"table/update","level":"info","message":"OK","timestamp":"2023-12-12 21:59:27"}
+{"level":"info","message":{"body":{"description":"Datos del usuario","id":"b04da107-64ee-4fd8-83a0-5dfd5479e06b"},"method":"POST","params":"","query":"","url":"/api/table/update"},"timestamp":"2023-12-12 22:01:26"}
+{"controller":"table/update","level":"info","message":"OK","timestamp":"2023-12-12 22:01:27"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTable/"},"timestamp":"2023-12-12 22:01:45"}
+{"controller":"table/getAllTable","level":"info","message":"OK","timestamp":"2023-12-12 22:01:46"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 22:02:01"}
+{"controller":"table/getAllTableField","level":"info","message":"OK","timestamp":"2023-12-12 22:02:02"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/GetAllTableIndex/"},"timestamp":"2023-12-12 22:02:13"}
+{"controller":"table/getAllTableIndex","level":"info","message":"OK","timestamp":"2023-12-12 22:02:15"}
+{"level":"info","message":{"body":"","method":"GET","params":{},"query":{},"url":"/api/table/getAllTableField/"},"timestamp":"2023-12-12 22:02:25"}
+{"controller":"table/getAllTableField","level":"info","message":"OK","timestamp":"2023-12-12 22:02:25"}
