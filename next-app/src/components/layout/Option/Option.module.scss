@@ -1,0 +1,22 @@
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 50px);
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #3498db,
+    #2c3e50
+  ); // Puedes ajustar los colores
+}

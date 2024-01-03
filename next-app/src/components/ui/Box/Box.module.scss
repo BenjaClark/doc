@@ -1,0 +1,42 @@
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 10px 10px white;
+    text-shadow: 0 0 10px white;
+  }
+  50% {
+    box-shadow: 0 0 20px 10px white;
+    text-shadow: 0 0 20px white;
+  }
+  100% {
+    box-shadow: 0 0 10px 5px white;
+    text-shadow: 0 0 10px white;
+  }
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #89acf3ab;
+  color: white;
+  transition: box-shadow 0.3s ease, text-shadow 0.3s ease; /* Agrega una transición para suavizar el cambio */
+}
+
+.box:hover {
+  box-shadow: 0 0 10px 5px #ffffff; /* Cambia el color y el tamaño del brillo al pasar el mouse sobre el cuadro */
+  text-shadow: 0 0 10px #ffffff; /* Agrega un brillo a las letras al pasar el mouse sobre el cuadro */
+  animation: shine 2s infinite; /* Agrega la animación de brillo solo cuando se pasa el mouse sobre el cuadro */
+}
+
+/* Detiene la animación al pasar el mouse fuera del cuadro */
+.box:not(:hover) {
+  animation: none;
+}

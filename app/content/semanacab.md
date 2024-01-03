@@ -1,15 +1,12 @@
 
-## Tabla 'semanacab'
-0f87b604-0923-4cd6-b51d-881bf501e693
-#### Descripción
+  Nombre de la Tabla: semanacab
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|dia| int| null |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|sucursal_id| int| null |null |  | | null |
 
-### Estructura de la Tabla 'semanacab'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

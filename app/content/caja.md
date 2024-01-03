@@ -1,16 +1,12 @@
 
-## Tabla 'caja'
-53287667-acaa-42f2-9179-7a2d37e61228
-#### Descripción
+  Nombre de la Tabla: caja
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|id| int| null |null | PRI | auto_increment| null |
+|sucursal_id| int| null |false |  | | null |
+|camioneta_id| int| null |null |  | | null |
 
-### Estructura de la Tabla 'caja'
-
-
-
-
-### Detalles de las Columnas
-id
-int
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

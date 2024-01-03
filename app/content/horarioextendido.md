@@ -1,15 +1,13 @@
 
-## Tabla 'horarioextendido'
-ea843410-423b-4c47-9953-b66e124c5f75
-#### Descripción
+  Nombre de la Tabla: horarioextendido
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|fecha| date| null |null |  | | null |
+|hora| varchar| 5 |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|jornada| varchar| 2 |null |  | | null |
 
-### Estructura de la Tabla 'horarioextendido'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

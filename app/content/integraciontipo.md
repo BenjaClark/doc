@@ -1,15 +1,11 @@
 
-## Tabla 'integraciontipo'
-2ee975cc-07aa-43f4-91fb-9089e3509414
-#### Descripción
+  Nombre de la Tabla: integraciontipo
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|nombre| varchar| 150 |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
 
-### Estructura de la Tabla 'integraciontipo'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

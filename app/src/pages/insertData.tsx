@@ -8,10 +8,9 @@ interface tableData {
   id: string;
   name: string;
   description: string;
-  column_name: string;
 }
 
-interface ColumnData {
+interface Data {
   table_name: string;
   column_name: string;
   data_type: string;
@@ -25,7 +24,7 @@ interface ColumnData {
   referenced_column_name: string | null;
 }
 
-const data: ColumnData[] = dataJSON;
+const data: Data[] = dataJSON;
 
 const Home = ({ content }: any) => {
   prism.languages.javascript = prism.languages.js;
@@ -60,19 +59,7 @@ const tables: { [tableName: string]: string[] } = {};
 
 // Recorrer datos
 for (const column of data) {
-  const {
-    table_name,
-    column_name,
-    data_type,
-    character_maximum_length,
-    is_nullable,
-    column_default,
-    column_key,
-    extra,
-    constraint_name,
-    referenced_table_name,
-    referenced_column_name,
-  } = column;
+  const { table_name } = column;
 
   // Verificar si la tabla ya está en el objeto 'tables'
   if (!tables[table_name]) {
@@ -83,8 +70,9 @@ for (const column of data) {
 
 async function createTable(tableName: string) {
   const createTableSQL = `INSERT INTO doc.table (name) VALUES ('${tableName}') RETURNING id;`;
+  let client;
   try {
-    const client = await pool.connect();
+    client = await pool.connect();
     const result = await client.query(createTableSQL);
     const insertedId = result.rows[0].id;
     console.log(`Tabla ${tableName} creada con éxito`);
@@ -93,10 +81,14 @@ async function createTable(tableName: string) {
   } catch (error) {
     console.error(`Error al crear la tabla ${tableName}: ${error}`);
     return undefined;
+  } finally {
+    if (client) {
+      client.release();
+    }
   }
 }
 
-async function createTableField(tableId: string, columnData: ColumnData) {
+async function createTableField(tableId: string, data: Data) {
   const {
     column_name,
     data_type,
@@ -105,7 +97,7 @@ async function createTableField(tableId: string, columnData: ColumnData) {
     column_default,
     column_key,
     extra,
-  } = columnData;
+  } = data;
 
   const createTableFieldSQL = `
     INSERT INTO doc.table_field (
@@ -126,11 +118,14 @@ async function createTableField(tableId: string, columnData: ColumnData) {
       '${extra}'
     ) RETURNING id;
   `;
+
+  let client;
+
   try {
-    const client = await pool.connect();
+    client = await pool.connect();
     const result = await client.query(createTableFieldSQL);
 
-    if (result.rows && result.rows[0]) {
+    if (result.rows) {
       const insertedId = result.rows[0].id;
       console.log(`Datos insertados en doc.table_field con éxito`);
       return insertedId;
@@ -142,10 +137,15 @@ async function createTableField(tableId: string, columnData: ColumnData) {
     client.release();
   } catch (error) {
     console.error(`Error al insertar en doc.table_field: ${error}`);
+    throw error;
+  } finally {
+    if (client) {
+      client.release();
+    }
   }
 }
 
-async function createTableIndex(tableFieldId: string, columnData: ColumnData) {
+async function createTableIndex(tableFieldId: string, columnData: Data) {
   const { constraint_name, referenced_table_name, referenced_column_name } =
     columnData;
 
@@ -162,42 +162,65 @@ async function createTableIndex(tableFieldId: string, columnData: ColumnData) {
       '${referenced_column_name}'
     );
   `;
-
+  let client;
   try {
-    const client = await pool.connect();
-    await client.query(createTableIndexSQL);
-    console.log(`Datos insertados en doc.table_index con éxito`);
+    client = await pool.connect();
+    const result = await client.query(createTableIndexSQL);
+
+    console.log(`Resultado de la inserción en doc.table_index:`, result.rows);
+
+    if (result.rows) {
+      console.log(`Datos insertados en doc.table_index con éxito`);
+    } else {
+      console.error(
+        `Error al insertar en doc.table_index: No se insertaron filas`
+      );
+    }
+
     client.release();
   } catch (error) {
     console.error(`Error al insertar en doc.table_index: ${error}`);
+    throw error;
+  } finally {
+    if (client) {
+      client.release();
+    }
   }
 }
 
 // Recorrer el objeto 'tables' y crear las tablas
 async function createTables() {
-  for (const tableName in tables) {
-    if (Object.prototype.hasOwnProperty.call(tables, tableName)) {
-      const tableId = await createTable(tableName);
-      if (tableId !== undefined) {
-        const columnsForTable = data.filter(
-          (column) => column.table_name === tableName
-        );
-        if (columnsForTable.length > 0) {
-          for (const columnData of columnsForTable) {
+  const tableCreationPromises = Object.keys(tables).map(async (tableName) => {
+    const tableId = await createTable(tableName);
+    if (tableId !== undefined) {
+      const columnsForTable = data.filter(
+        (data) => data.table_name === tableName
+      );
+      if (columnsForTable.length > 0) {
+        const columnCreationPromises = columnsForTable.map(
+          async (columnData) => {
             const tableFieldId = await createTableField(tableId, columnData);
-            if (tableFieldId !== undefined) {
-              if (columnData.constraint_name !== null) {
-                await createTableIndex(tableFieldId, columnData);
-              } else {
-                console.log("el campo constraint_name = null");
-              }
+            if (
+              tableFieldId !== undefined &&
+              columnData.constraint_name !== null
+            ) {
+              await createTableIndex(tableFieldId, columnData);
+            } else {
+              console.log("el campo constraint_name = null");
             }
           }
-        } else {
-          console.error(`No se encontraron datos para la tabla ${tableName}`);
-        }
+        );
+
+        // Esperar a que todas las columnas se creen antes de pasar a la siguiente tabla
+        await Promise.all(columnCreationPromises);
+      } else {
+        console.error(`No se encontraron datos para la tabla ${tableName}`);
       }
     }
-  }
+  });
+
+  // Esperar a que todas las tablas se creen antes de finalizar
+  await Promise.all(tableCreationPromises);
 }
+
 export default Home;

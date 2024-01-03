@@ -1,0 +1,11 @@
+.contentRow {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+.contentCell {
+  display: flex;
+  flex-direction: column;
+}

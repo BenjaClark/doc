@@ -1,0 +1,25 @@
+.window {
+  position: absolute;
+  background-color: #81a0fc;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+
+  p {
+    align-self: center;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
+
+.buttonDiv {
+  Button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}

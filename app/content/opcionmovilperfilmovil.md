@@ -1,15 +1,11 @@
 
-## Tabla 'opcionmovilperfilmovil'
-5f2bfafd-787b-4129-9d02-9c950d0549af
-#### Descripción
+  Nombre de la Tabla: opcionmovilperfilmovil
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|perfilMovil_id| int| null |null | PRI | | null |
+|opcionMovil_id| int| null |null | PRI | | null |
 
-### Estructura de la Tabla 'opcionmovilperfilmovil'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (opcionMovil_id) 
+Campos Clave: opcionMovil_id

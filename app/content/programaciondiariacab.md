@@ -1,15 +1,12 @@
 
-## Tabla 'programaciondiariacab'
-c715fa60-d959-4624-8b4e-09b659f5dc9a
-#### Descripción
+  Nombre de la Tabla: programaciondiariacab
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|id| int| null |null | PRI | auto_increment| null |
+|sucursal_id| int| null |null | MUL | | null |
+|fecha| date| null |null |  | | null |
 
-### Estructura de la Tabla 'programaciondiariacab'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  programaciondiariacab_sucursal_id_IDX (fecha) 
+Campos Clave: fecha

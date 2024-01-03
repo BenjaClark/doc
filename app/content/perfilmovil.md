@@ -1,15 +1,11 @@
 
-## Tabla 'perfilmovil'
-6f9fb0f8-e084-46bf-86d7-8152298060d6
-#### Descripción
+  Nombre de la Tabla: perfilmovil
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|id| int| null |null | PRI | auto_increment| null |
+|nombre| varchar| 150 |null |  | | null |
 
-### Estructura de la Tabla 'perfilmovil'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

@@ -1,15 +1,15 @@
 
-## Tabla 'guiadespachodet'
-66cf0f4a-2979-4c3a-b4f3-bb07625742e4
-#### Descripción
+  Nombre de la Tabla: guiadespachodet
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|cantidad| float| null |null |  | | null |
+|descripcion| varchar| 600 |null |  | | null |
+|guiaDespachoCab_id| int| null |null | MUL | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|venta| int| null |null |  | | null |
+|costo| int| null |null |  | | null |
 
-### Estructura de la Tabla 'guiadespachodet'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

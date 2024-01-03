@@ -1,15 +1,12 @@
 
-## Tabla 'masaespecial'
-bc5bafcd-1013-42fd-9cb8-b0eacb3eade2
-#### Descripción
+  Nombre de la Tabla: masaespecial
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|tamano_id| int| null |null | PRI | | null |
+|masaSabor_id| int| null |null | PRI | | null |
+|masaTipo_id| int| null |null | PRI | | null |
 
-### Estructura de la Tabla 'masaespecial'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (masaTipo_id) 
+Campos Clave: masaTipo_id

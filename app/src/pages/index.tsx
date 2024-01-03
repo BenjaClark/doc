@@ -1,107 +1,141 @@
 import fs from "fs";
 import path from "path";
-import { remark } from "remark";
-import html from "remark-html";
 import axios from "axios";
 import prism from "prismjs";
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-sql";
 
-interface tableData {
-  table_id: string;
-  table_name: string;
-  table_description: string;
-  table_field_id: string;
-  table_field_name: string;
-  table_field_type: number;
-  table_field_length: number;
-  table_field_default: number;
-  table_field_key: string;
-  table_field_extra: string;
-  table_index_id: string;
-  table_index_table: string;
-  table_index_column: string;
+interface TableData {
+  id: string;
+  name: string;
+  description: string;
 }
 
-const generateMarkdownFile = async (tableData: tableData) => {
-  const {
-    table_id,
-    table_name,
-    table_description,
-    table_field_id,
-    table_field_name,
-    table_field_type,
-    table_field_length,
-    table_field_default,
-    table_field_key,
-    table_field_extra,
-    table_index_id,
-    table_index_table,
-    table_index_column,
-  } = tableData;
+interface TableFieldData {
+  id: string;
+  table_id: string;
+  name: string;
+  type: number;
+  length: number;
+  default: boolean;
+  key: string;
+  extra: string;
+  description: string;
+}
 
-  // Genera el contenido del archivo Markdown
-  const markdownContent = `
-## Tabla '${table_name}'
-${table_id}
-#### Descripción
+interface TableIndexData {
+  id: string;
+  table_field_id: string;
+  constraint: string;
+  table: string;
+  column: string;
+}
 
-${table_description}
+interface CombinedData {
+  tableData: TableData;
+  fieldData?: TableFieldData;
+  indexData?: TableIndexData;
+}
 
-### Estructura de la Tabla '${table_name}'
+const generateMarkdownFile = async (combinedData: CombinedData) => {
+  const { tableData, fieldData, indexData } = combinedData;
 
-
-
-
-### Detalles de las Columnas
-${table_field_name}
-${table_field_type}
-
+  let markdownContent = `
+  Nombre de la Tabla: ${tableData.name}
+  Descripción: ${tableData.description}
 `;
 
-  // Define la ruta al archivo Markdown que se va a crear
-  const markdownPath = path.join(process.cwd(), "content", `${table_name}.md`);
+  if (fieldData !== undefined) {
+    markdownContent += `
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+`;
+    fieldData.forEach((field) => {
+      const {
+        name,
+        type,
+        length,
+        default: defaultValue,
+        key,
+        extra,
+        description,
+      } = field;
+      markdownContent += `|${name}| ${type}| ${length} |${defaultValue} | ${key} | ${extra}| ${description} |\n`;
+    });
+  }
 
-  // Escribe el contenido en el archivo
+  if (indexData) {
+    const { id, table_field_id, constraint } = indexData;
+
+    // Buscar todos los campos relacionados con este índice
+    const camposRelacionados = fieldData?.filter(
+      (field) => field.id === table_field_id
+    );
+
+    // Agregar relaciones y campos clave para cada campo relacionado
+    camposRelacionados.forEach((campoRelacionado) => {
+      markdownContent += `
+Relaciones:  ${constraint} (${campoRelacionado.name}) 
+Campos Clave: ${campoRelacionado.name}
+`;
+    });
+  }
+  const markdownPath = path.join(
+    process.cwd(),
+    "content",
+    `${tableData.name}.md`
+  );
   fs.writeFileSync(markdownPath, markdownContent, "utf-8");
 };
 
-const Home = ({ content }: any) => {
-  prism.languages.javascript = prism.languages.js;
-
-  return (
-    <div>
-      <div dangerouslySetInnerHTML={{ __html: content }} />
-    </div>
-  );
-};
-
 export async function getStaticProps() {
-  const apiTableUrl = "http://localhost:3001/api/table/getAllTablesData/";
+  const apiTablesUrl = "http://localhost:3001/api/table/getAllTable/";
+  const apiFieldUrl = "http://localhost:3001/api/table/getAllTableField/";
+  const apiIndexUrl = "http://localhost:3001/api/table/getAllTableIndex/";
 
   try {
     // Extraer datos de la API
-    const tableResponse = await axios.get(apiTableUrl);
-    if (tableResponse.status === 200) {
-      const apiData = tableResponse.data.data;
+    const tableResponse = await axios.get(apiTablesUrl);
+    const apiData: TableData[] = tableResponse.data.data;
 
-      // Generar archivos Markdown para cada tabla
-      apiData.forEach((tableData) => {
-        generateMarkdownFile(tableData);
+    const fieldResponse = await axios.get(apiFieldUrl);
+    const apiFieldData: TableFieldData[] = fieldResponse.data.data;
+
+    const indexResponse = await axios.get(apiIndexUrl);
+    const apiIndexData: TableIndexData[] = indexResponse.data.data;
+
+    // Generar un solo archivo para cada tabla
+    apiData.forEach((tableData) => {
+      const matchingFieldData = apiFieldData.filter(
+        (fieldData) => fieldData.table_id === tableData.id
+      );
+
+      let matchingIndexData;
+
+      matchingFieldData.forEach((fieldData) => {
+        const foundIndexData = apiIndexData.find(
+          (indexData) => indexData.table_field_id === fieldData.id
+        );
+
+        if (foundIndexData) {
+          matchingIndexData = foundIndexData;
+        }
       });
 
-      // Procesa el Markdown a HTML
-      const result = await remark().use(html).process();
+      generateMarkdownFile({
+        tableData,
+        fieldData: matchingFieldData,
+        indexData: matchingIndexData,
+      });
+    });
 
-      const contentHtml = result.toString();
-      return {
-        props: {
-          content: contentHtml,
-        },
-      };
-    }
+    return {
+      props: {
+        content: "Archivos Markdown generados correctamente",
+      },
+    };
   } catch (error) {
-    console.error("Error fetching data from API");
+    console.error("Error fetching data from API", error);
     return {
       props: {
         content: "Error fetching data from API",
@@ -110,4 +144,12 @@ export async function getStaticProps() {
   }
 }
 
-export default Home;
+export default function Home({ content }: any) {
+  prism.languages.javascript = prism.languages.js;
+
+  return (
+    <div>
+      <div>{content}</div>
+    </div>
+  );
+}

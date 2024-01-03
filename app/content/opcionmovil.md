@@ -1,15 +1,14 @@
 
-## Tabla 'opcionmovil'
-481dbb31-7684-4916-b8f0-165b98918ee8
-#### Descripción
+  Nombre de la Tabla: opcionmovil
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|estado| int| null |true |  | | null |
+|icono| varchar| 50 |null |  | | null |
+|nombre| varchar| 100 |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|texto| varchar| 150 |null |  | | null |
 
-### Estructura de la Tabla 'opcionmovil'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

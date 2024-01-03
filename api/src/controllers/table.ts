@@ -97,8 +97,8 @@ const getAllTableField = async (req: any, res: any) => {
     const data = result.data.map((tableField: any) => {
       return {
         id: tableField.id,
-        table_id: tableField.name,
-        name: tableField.description,
+        table_id: tableField.table_id,
+        name: tableField.name,
         type: tableField.type,
         length: tableField.length,
         default: tableField.default,

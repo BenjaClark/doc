@@ -1,15 +1,12 @@
 
-## Tabla 'horarioatencion'
-acaaa47a-c035-4146-8747-7a049cb5cdeb
-#### Descripción
+  Nombre de la Tabla: horarioatencion
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|id| int| null |null | PRI | auto_increment| null |
+|hora| varchar| 5 |null |  | | null |
+|jornada| varchar| 2 |null |  | | null |
 
-### Estructura de la Tabla 'horarioatencion'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

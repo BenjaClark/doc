@@ -1,15 +1,14 @@
 
-## Tabla 'integraciondiccionario'
-37eab525-e259-4b7c-ae7e-28942ce43173
-#### Descripción
+  Nombre de la Tabla: integraciondiccionario
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|id_empresa| varchar| 100 |null |  | | null |
+|tipo| int| null |null |  | | null |
+|empresa_id| int| null |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|id_fabrica| int| null |null |  | | null |
 
-### Estructura de la Tabla 'integraciondiccionario'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

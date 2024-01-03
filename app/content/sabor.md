@@ -1,15 +1,11 @@
 
-## Tabla 'sabor'
-1304f902-4b9a-409f-bf4f-9c9219cb3006
-#### Descripción
+  Nombre de la Tabla: sabor
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|nombre| varchar| 200 |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
 
-### Estructura de la Tabla 'sabor'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

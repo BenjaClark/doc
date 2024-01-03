@@ -1,15 +1,11 @@
 
-## Tabla 'sale_type'
-b7a23f70-0337-4476-a1a7-aa47ee4547b8
-#### Descripción
+  Nombre de la Tabla: sale_type
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|name| varchar| 200 |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
 
-### Estructura de la Tabla 'sale_type'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

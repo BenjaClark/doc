@@ -1,15 +1,15 @@
 
-## Tabla 'programaciondiariadet'
-86d8340d-3303-4107-84e8-f1d8964d051f
-#### Descripción
+  Nombre de la Tabla: programaciondiariadet
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|tipo| int| null |null |  | | null |
+|programacionDiariaCab_id| int| null |null | MUL | | null |
+|cantidad| int| null |null |  | | null |
+|torta_id| int| null |null |  | | null |
+|tamano_id| int| null |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
 
-### Estructura de la Tabla 'programaciondiariadet'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

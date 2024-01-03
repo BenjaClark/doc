@@ -4,7 +4,7 @@ export const _getAll = `
             name,
             type,
             length,
-            table_field.default,
+            "default",
             key,
             extra,
             description

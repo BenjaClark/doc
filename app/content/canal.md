@@ -1,16 +1,11 @@
 
-## Tabla 'canal'
-acabc501-ae3e-41dc-9224-ec9d27246014
-#### Descripción
+  Nombre de la Tabla: canal
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|id| int| null |null | PRI | auto_increment| null |
+|nombre| varchar| 6 |null |  | | null |
 
-### Estructura de la Tabla 'canal'
-
-
-
-
-### Detalles de las Columnas
-id
-int
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

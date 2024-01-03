@@ -1,15 +1,21 @@
 
-## Tabla 'guiadespachocab'
-15d0d451-aba3-42e7-8c30-cc25510c9456
-#### Descripción
+  Nombre de la Tabla: guiadespachocab
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|ciudad| varchar| 100 |null |  | | null |
+|camioneta_id| int| null |null |  | | null |
+|giro| varchar| 150 |null |  | | null |
+|razonSocial| varchar| 150 |null |  | | null |
+|rut| varchar| 11 |null |  | | null |
+|numero| int| null |null |  | | null |
+|comuna| varchar| 100 |null |  | | null |
+|url| varchar| 250 |null |  | | null |
+|fecha| datetime| null |null |  | | null |
+|direccion| varchar| 200 |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|email| varchar| 150 |null |  | | null |
 
-### Estructura de la Tabla 'guiadespachocab'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

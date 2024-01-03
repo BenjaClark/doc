@@ -1,15 +1,27 @@
 
-## Tabla 'productoprogramado'
-87e99001-4104-4951-af2a-ab4e9c4ef1ad
-#### Descripción
+  Nombre de la Tabla: productoprogramado
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|fabricado| datetime| null |null |  | | null |
+|revisado| datetime| null |null |  | | null |
+|caja_id| int| null |null |  | | null |
+|impreso| datetime| null |null |  | | null |
+|guiaDespachoCab_id| int| null |null |  | | null |
+|despachado| datetime| null |null |  | | null |
+|producto_id| int| null |null |  | | null |
+|fecha| date| null |null |  | | null |
+|sucursal_id| int| null |null |  | | null |
+|estado| int| null |null |  | | null |
+|recepcionado| datetime| null |null |  | | null |
+|camioneta_id| int| null |null |  | | null |
+|programado| datetime| null |null |  | | null |
+|cantidad| float| null |null |  | | null |
+|observacion| text| 65535 |null |  | | null |
+|facturaCab_id| int| null |null |  | | null |
+|stock| datetime| null |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
 
-### Estructura de la Tabla 'productoprogramado'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

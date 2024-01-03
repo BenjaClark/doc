@@ -1,15 +1,14 @@
 
-## Tabla 'combinacioncanal'
-297cf969-9ab0-43b2-9a7a-2b7735d1b5ca
-#### Descripción
+  Nombre de la Tabla: combinacioncanal
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|canal_id| int| null |null |  | | null |
+|preciopublico| int| null |null |  | | null |
+|combinacionformatamano_id| int| null |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|preciocosto| int| null |null |  | | null |
 
-### Estructura de la Tabla 'combinacioncanal'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

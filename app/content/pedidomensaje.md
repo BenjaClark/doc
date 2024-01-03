@@ -1,15 +1,11 @@
 
-## Tabla 'pedidomensaje'
-d9a30f99-7781-4043-b17a-a972d807bf29
-#### Descripción
+  Nombre de la Tabla: pedidomensaje
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|mensaje| varchar| 50 |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
 
-### Estructura de la Tabla 'pedidomensaje'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

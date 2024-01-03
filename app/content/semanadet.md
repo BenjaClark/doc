@@ -1,15 +1,14 @@
 
-## Tabla 'semanadet'
-0e35713d-b709-4b05-a3ed-a0c8a244fda0
-#### Descripción
+  Nombre de la Tabla: semanadet
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|cantidad| int| null |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|torta_id| int| null |null |  | | null |
+|semanaCab_id| int| null |null |  | | null |
+|tamano_id| int| null |null |  | | null |
 
-### Estructura de la Tabla 'semanadet'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

@@ -1,15 +1,14 @@
 
-## Tabla 'sobrantedet'
-f155212f-0a19-401e-a7b0-d605ed36ef4d
-#### Descripción
+  Nombre de la Tabla: sobrantedet
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|cantidad| int| null |null |  | | null |
+|torta_id| int| null |null |  | | null |
+|sobranteCab_id| int| null |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|tamano_id| int| null |null |  | | null |
 
-### Estructura de la Tabla 'sobrantedet'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

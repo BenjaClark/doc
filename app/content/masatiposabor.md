@@ -1,15 +1,11 @@
 
-## Tabla 'masatiposabor'
-0fd8bcff-316f-40c6-a019-3a19dff9bf0a
-#### Descripción
+  Nombre de la Tabla: masatiposabor
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|masaSabor_id| int| null |null | PRI | | null |
+|masaTipo_id| int| null |null | PRI | | null |
 
-### Estructura de la Tabla 'masatiposabor'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (masaTipo_id) 
+Campos Clave: masaTipo_id

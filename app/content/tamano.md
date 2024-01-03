@@ -1,15 +1,13 @@
 
-## Tabla 'tamano'
-53058ab2-ffe2-461c-9af5-d830dcba0654
-#### Descripción
+  Nombre de la Tabla: tamano
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|estado| int| null |true |  | | null |
+|num| varchar| 3 |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|personas| int| null |null |  | | null |
 
-### Estructura de la Tabla 'tamano'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

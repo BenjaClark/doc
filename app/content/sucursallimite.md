@@ -1,15 +1,13 @@
 
-## Tabla 'sucursallimite'
-664d9fa3-a8b3-4b84-a973-d9eee8e2836a
-#### Descripción
+  Nombre de la Tabla: sucursallimite
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|id| int| null |null | PRI | auto_increment| null |
+|sucursal_id| int| null |null | UNI | | null |
+|pedidoInternet| int| null |null |  | | null |
+|pedidoEspecial| int| null |null |  | | null |
 
-### Estructura de la Tabla 'sucursallimite'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  sucursallimite_sucursal_id_uindex (sucursal_id) 
+Campos Clave: sucursal_id

@@ -1,15 +1,12 @@
 
-## Tabla 'shape'
-112937f0-86bd-4bd3-ad3f-db9b35585642
-#### Descripción
+  Nombre de la Tabla: shape
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|id| int| null |null | PRI | auto_increment| null |
+|code| varchar| 1 |null |  | | null |
+|name| varchar| 200 |null |  | | null |
 
-### Estructura de la Tabla 'shape'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

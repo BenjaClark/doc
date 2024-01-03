@@ -1,15 +1,13 @@
 
-## Tabla 'usuarioopcion'
-38bd6229-8d55-4841-a7c9-a6245d469b6a
-#### Descripción
+  Nombre de la Tabla: usuarioopcion
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|opcion_id| int| null |null | PRI | | null |
+|usuario_id| int| null |null | PRI | | null |
+|opcion_id| int| null |null | PRI | | null |
+|usuario_id| int| null |null | PRI | | null |
 
-### Estructura de la Tabla 'usuarioopcion'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (usuario_id) 
+Campos Clave: usuario_id

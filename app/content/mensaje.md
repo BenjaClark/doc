@@ -1,15 +1,15 @@
 
-## Tabla 'mensaje'
-ef53fc59-5810-462e-addf-19af02078da4
-#### Descripción
+  Nombre de la Tabla: mensaje
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|correlativo| int| null |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|sucursal_id| int| null |null |  | | null |
+|texto| text| 65535 |null |  | | null |
+|fecha| date| null |null |  | | null |
+|impreso| int| null |false |  | | null |
 
-### Estructura de la Tabla 'mensaje'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

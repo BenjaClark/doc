@@ -1,15 +1,11 @@
 
-## Tabla 'opcionperfil'
-3c29dc3e-4794-4ffa-91ec-7b2874adae58
-#### Descripción
+  Nombre de la Tabla: opcionperfil
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|perfil_id| int| null |null | PRI | | null |
+|opcion_id| int| null |null | PRI | | null |
 
-### Estructura de la Tabla 'opcionperfil'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (opcion_id) 
+Campos Clave: opcion_id

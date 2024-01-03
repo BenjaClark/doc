@@ -1,15 +1,12 @@
 
-## Tabla 'productotipo'
-c2f3e197-321e-4eae-9a8e-0600fe90cae2
-#### Descripción
+  Nombre de la Tabla: productotipo
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|id| int| null |null | PRI | auto_increment| null |
+|nombre| varchar| 200 |null |  | | null |
+|estado| tinyint| null |true |  | | null |
 
-### Estructura de la Tabla 'productotipo'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

@@ -1,15 +1,16 @@
 
-## Tabla 'combinaciones'
-4e3f43b3-5def-43e7-be9a-b0876a4662a2
-#### Descripción
+  Nombre de la Tabla: combinaciones
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|estado| int| null |true |  | | null |
+|id| int| null |null |  | | null |
+|masaTipo_id| int| null |null | PRI | | null |
+|extra_id| int| null |false | PRI | | null |
+|crema_id| int| null |null | PRI | | null |
+|masaSabor_id| int| null |null | PRI | | null |
+|relleno_id| int| null |null | PRI | | null |
 
-### Estructura de la Tabla 'combinaciones'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  combinaciones_masaTipo_id_IDX (relleno_id) 
+Campos Clave: relleno_id

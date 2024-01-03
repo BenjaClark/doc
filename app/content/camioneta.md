@@ -1,16 +1,13 @@
 
-## Tabla 'camioneta'
-fbd54784-df8a-41ca-921f-b8649879dd3c
-#### Descripción
+  Nombre de la Tabla: camioneta
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|estado| int| null |true |  | | null |
+|patente| varchar| 6 |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|sucursal_id| int| null |null |  | | null |
 
-### Estructura de la Tabla 'camioneta'
-
-
-
-
-### Detalles de las Columnas
-id
-int
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

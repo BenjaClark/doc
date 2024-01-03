@@ -1,15 +1,12 @@
 
-## Tabla 'crema'
-9cb746ed-3a86-4bf0-ad1d-f79a5244a7cf
-#### Descripción
+  Nombre de la Tabla: crema
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|estado| int| null |true |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|nombre| varchar| 200 |null |  | | null |
 
-### Estructura de la Tabla 'crema'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

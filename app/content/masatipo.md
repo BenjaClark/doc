@@ -1,15 +1,12 @@
 
-## Tabla 'masatipo'
-898887ae-be1b-416f-ada7-df0006722507
-#### Descripción
+  Nombre de la Tabla: masatipo
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|estado| int| null |true |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|nombre| varchar| 200 |null |  | | null |
 
-### Estructura de la Tabla 'masatipo'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id

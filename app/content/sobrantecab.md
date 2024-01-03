@@ -1,15 +1,12 @@
 
-## Tabla 'sobrantecab'
-214b6ec2-33ee-4b1c-81a2-205c8ac76517
-#### Descripción
+  Nombre de la Tabla: sobrantecab
+  Descripción: null
 
-null
+| Campo          | Tipo | Tamaño    |  Default    | Key | Extra | Description | 
+|----------------|------|-----------|-------------|-----|-------|-------------|
+|fecha| date| null |null |  | | null |
+|id| int| null |null | PRI | auto_increment| null |
+|sucursal_id| int| null |null |  | | null |
 
-### Estructura de la Tabla 'sobrantecab'
-
-
-
-
-### Detalles de las Columnas
-undefined
-
+Relaciones:  PRIMARY (id) 
+Campos Clave: id
